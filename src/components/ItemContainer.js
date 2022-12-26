@@ -7,7 +7,7 @@ const ItemContainer = () => {
         <img src="" alt="" />
       </div>
       <div className="itemDescription">
-        <h3 className='itemsName'>Lorem ipsum dolor sit amet, consectetur</h3>
+        <h2 className='itemsName'>Lorem ipsum dolor sit amet, consectetur</h2>
         <h4 className='itemsAuthor'>Lorem ipsum</h4>
         <span className='additionalInfo'>Lorem ipsum dolor sit</span>
       </div>
