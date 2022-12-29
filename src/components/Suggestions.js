@@ -1,4 +1,5 @@
 import React from 'react';
+import JSONDATA from '../utils/suggestions.json'
 const Suggestions = () => {
   return (
     <div className='suggestionsContainer'>
@@ -9,46 +10,22 @@ const Suggestions = () => {
           />
           <button>SUBMIT</button>
       </div>
-      <ul className='suggestionsLst'>
-            <li className='listElement'>
+      <ul className='suggestionsList'>
+      {JSONDATA.map( val =>{
+        return(
+            <li className='listElement' key={val.id}>
                 <div className='left'>
                   <div className='itemThumbnail'>
                   <img src="" alt="" />
                   </div>
                 </div>
                 <div className='right'>
-                  <h3 className='itemsName'>Lorem ipsum</h3>
-                  <p className='suggestionDescription'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  </p>
+                  <h3 className='itemsName'>{val.suggestion_name}</h3>
+                  <p className='suggestionDescription'>{val.suggestion_description}</p>
                 </div>
             </li>
-            <li className='listElement'>
-                <div className='left'>
-                  <div className='itemThumbnail'>
-                  <img src="" alt="" />
-                  </div>
-                </div>
-                <div className='right'>
-                  <h3 className='itemsName'>Lorem ipsum</h3>
-                  <p className='suggestionDescription'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  </p>
-                </div>
-            </li>
-            <li className='listElement'>
-                <div className='left'>
-                  <div className='itemThumbnail'>
-                  <img src="" alt="" />
-                  </div>
-                </div>
-                <div className='right'>
-                  <h3 className='itemsName'>Lorem ipsum</h3>
-                  <p className='suggestionDescription'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  </p>
-                </div>
-            </li>
+            )
+          })}
       </ul>
     </div>
   );
