@@ -1,4 +1,5 @@
 import React from 'react';
+import FullItem from './components/FullItem';
 import ItemContainer from './components/ItemContainer';
 import Suggestions from './components/Suggestions';
 
@@ -6,11 +7,9 @@ const Home = () => {
   return (
     <div>
       <div className="content">
-        <ItemContainer />      
-        <ItemContainer />      
-        <ItemContainer />
+        <FullItem />
+        <FullItem />
       </div>
-      <Suggestions></Suggestions>   
     </div>
   );
 };

@@ -11,6 +11,7 @@ const ItemContainer = () => {
         <h4 className='itemsAuthor'>Lorem ipsum</h4>
         <span className='additionalInfo'>Lorem ipsum dolor sit</span>
       </div>
+      <br />
     </div>
   );
 };
