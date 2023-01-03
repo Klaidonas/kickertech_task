@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap');
+
+.suggestionsContainer {
+  background-color: #353535;
+  max-width:500px;
+  height: 275px;
+  overflow-y:auto;
+  border-radius: 0 0 10px 10px;
+}
+
+/*SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #B0B0B0;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 50, 0.75);
+  border-radius: 5px;
+}
+/*SCROLL BAR */
+
+/*  SEARCHBAR */
+.searchBar {
+  background-color: rgb(68, 68, 68, 0.96);
+  border-radius:  30px;
+  max-width: 470px;
+  /* width: calc(auto+20px); */
+  height: 40px;
+  margin-left:20px;
+  margin-right:20px;
+  display: flex;
+}
+.searchBar > *, .btn > * {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+.searchBar:first-child {
+  margin-top: 30px;
+}
+.searchBar input {
+  border:none;
+  border-radius:  30px 0 0 30px;
+  width: 80%;
+  background-color: #444;
+  padding-left: 20px;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-size: 14px;
+}
+.searchBar .btn {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.searchBar button {
+  border: none;
+  border-radius: 0 30px 30px 0;
+  width: 100%;
+  background-color: rgb(68, 68, 68, 0.96);
+  font-size: 10px;
+  padding-top: 2.5px;
+  cursor: pointer;
+}
+/*  SEARCHBAR */
+
+.suggestionsList {
+  list-style: none;
+  padding: 0;
+}
+
+.listElement {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+  margin: 10px auto;
+  padding-left: 30px;
+}
+
+.itemThumbnail {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.itemThumbnail img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.listElement .right {
+  margin:auto 15px;
+}
+
+.listElement .itemsName {
+  margin: 8px 0;
+}
+.suggestionDescription {
+  font-size: 12px;
+}
+/*SUGGESTIONS (LIST) */
+
+/* RESPONSIVE */
+@media (min-width: 641px) and (max-width: 1200px) {
+  .suggestionsContainer {
+    max-width: 595px;
+    height: 550px;
+    border-radius: 0 15px 15px 0;
+  }
+  .searchBar {
+    width: 95%;
+  }
+  .searchBar input {
+    width: 75%;
+  }
+  .searchBar button {
+    width: 25%;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius:10px;
+    margin-top: 10px;
+  }
+}
