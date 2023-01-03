@@ -1,18 +1,8 @@
 import React from 'react';
-import ItemContainer from './components/ItemContainer';
-import Suggestions from './components/Suggestions';
+import FullItem from './components/FullItem';
 
 const Home = () => {
-  return (
-    <div>
-      <div className="content">
-        <ItemContainer />      
-        <ItemContainer />      
-        <ItemContainer />
-      </div>
-      <Suggestions></Suggestions>   
-    </div>
-  );
+  return <FullItem />
 };
 
 export default Home;
