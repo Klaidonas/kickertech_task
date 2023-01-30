@@ -10,12 +10,12 @@ const Header = () => {
   const [inactiveBurger, setInactiveBurger] = useState("block");
 
   const handleBurger = () => {
-    if(mobNav=="none") {
+    if(mobNav==="none") {
       setMobNav("block");
       setActiveBurger("block");
       setInactiveBurger("none")
     }
-    else if(mobNav=="block") {
+    else if(mobNav==="block") {
       setMobNav("none");
       setActiveBurger("none");
       setInactiveBurger("block")
