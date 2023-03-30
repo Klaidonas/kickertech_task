@@ -15,7 +15,7 @@ const LastItem = () => {
                 <img src={image} alt="" />
               </div>
               <div className="itemDescription">
-                <h2 className='itemsName'>{val.item_name}</h2> 
+                <h2 className='itemsName'>hello</h2> 
                 <h4 className='itemsAuthor'>{val.item_author}</h4>
                 <span className='additionalInfo'>{val.additional_info}</span>
               </div>
